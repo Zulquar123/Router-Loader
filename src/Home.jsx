@@ -1,14 +1,14 @@
 import React from "react";
 import Navbar from "./Navbar";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useLocation, useNavigation } from "react-router-dom";
 
 export default function Home() {
- 
+  const navigation = useNavigation();
+  const location = useLocation();
   return (
     <>
       <Navbar />
-
-      <Outlet />
+      {navigation.state === "Loading" ? <h1>Loading ...</h1> : <Outlet />}
     </>
   );
 }
