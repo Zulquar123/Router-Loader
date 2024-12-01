@@ -1,4 +1,3 @@
-import React from "react";
 import { useLoaderData, useNavigate } from "react-router-dom";
 
 export default function UserInfo() {
@@ -17,7 +16,6 @@ export default function UserInfo() {
       <h1>User Phone No : {phone}</h1>
       <h1>User Company : {company.name}</h1>
       <button onClick={handleBtn} className="border-2 border-black p-2 rounded">
-        {" "}
         Go Back ⬅️
       </button>
     </div>
