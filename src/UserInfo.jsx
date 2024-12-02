@@ -1,7 +1,8 @@
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 
 export default function UserInfo() {
   const navigate = useNavigate();
+
   const handleBtn = () => {
     navigate("/user");
   };
