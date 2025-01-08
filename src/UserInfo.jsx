@@ -7,7 +7,7 @@ export default function UserInfo() {
     navigate("/user");
   };
   const info = useLoaderData();
-  const { name, id, email, username, website, phone, company } = info;
+  const { name, id, email, website, phone, company } = info;
   return (
     <div className="w-[30%] m-auto flex flex-col items-center mt-10 border-4 border-black rounded gap-5 p-5">
       <h1>User ID : {id}</h1>
